@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>First Time Setup</title>
+
+        <!--css references here-->
+        <link href="menu_css.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="animation.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class ="sidebar" >
+        <div id="header"></div>
+        <h3 class ="sidebar-item">Menu</h3>
+        <a href="main.html" class="button">Home</a>
+        <a href="intro.html" class="button">Intro</a>
+        <a href="installIDE.html" class="button">Install an IDE</a>
+        <a href="firstTime.html" class="button"><b>First time setup.</b></a>
+        <a href="createWSpace.html" class="button">Create Workspace</a>
+        <a href="menuOverview.html" class="button">Menu Overview</a>
+    </div>
+
+    <div id="container">
+        <p>First Time Setup</p>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdownContent">
+            <a href="https://www.eclipse.org/" target="_blank">Visit Eclipse</a>
+          </div>
+        </div>
+        <script src="JScript/myScript.js"></script>
+        <button type="button" onclick="modFontSizeLarge()">150%</button>
+        <button type="button" onclick="modFontSizeMid()">125%</button>
+        <button type="button" onclick="modFontSizeSmall()">50%</button>
+        <div id="topBanner"></div>
+        <h2 class="sentence">First time
+          <div class="slidingHorizontal">
+            <span>setup of</span>
+            <span>Eclipse.</span>
+
+          </div>
+        </h2>
+        <div id="changeFont">
+        <video class="video" width="60%"  controls>
+            <source src="video/first_time.mp4" type="video/mp4">
+        </video>
+        <p>Music Courtesy of Moog(Authorised use)<br><br>
+            <b>First Time Setup</b><br>
+            In this section we will explain what happens during the first time you setup Eclipse.<br>
+            If you followed the previous video on Install an IDE then you have successfully installed
+            Eclipse to your system.<br>
+            Either double click the Icon on your desktop for Eclipse or search in the start menu for it.
+            You will see the launch frame on the desktop (0.12) which will then be replaced by the option
+            of creating your workspace.<br>
+            On the left side you will see a 4 options,<br> Launch which will take you to the development screen,
+            Workspaces, which allows you to manage your workspaces.<br>
+            Recent which shows you any recent work you have opened.<br>
+            and how to which is a helpful tool to get you started yourself and is a fantastic feature for those
+            already familiar with these stages of setting up an IDE.<br><br>
+            At (0.59) you can see that once you have selected a workspace you then launch using that workspace using the
+            Arrow next to it or simply click on an already created workspace.<br>
+
+        </p>
+        </div>
+
+
+        <br>
+        <br>
+        <button type="button" onclick="showFooter()">Show Footer</button>
+        <p id ="footer">Intro to Eclipse.</p>
+    </div>
+
+    </body>
+
+
+</html>

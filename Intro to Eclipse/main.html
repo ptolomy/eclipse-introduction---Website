@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<html>
+    <head>
+        <title>Main</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="introToEclipse">
+        <meta name="keywords" content="Main launch page">
+        <meta name="author" content="Gareth Tucker">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css references here-->
+        <link href="menu_css.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="animation.css" rel="stylesheet" type="text/css"/>
+
+
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+
+
+        <body>
+
+            <div class ="sidebar" >
+                <div id="header"></div>
+                <h3 class ="sidebar-item">Menu</h3>
+                <a href="main.html" class="button"><b>Home.</b></a>
+                <a href="intro.html" class="button">Intro</a>
+                <a href="installIDE.html" class="button">Install an IDE</a>
+                <a href="firstTime.html" class="button">First time setup</a>
+                <a href="createWSpace.html" class="button">Create Workspace</a>
+                <a href="menuOverview.html" class="button">Menu Overview</a>
+            </div>
+
+
+        <div id="container">
+            <P>HOME PAGE AND WHAT THE SITE DOES</P>
+            <br>
+            <div class="dropdown">
+              <button class="dropbtn"></button>
+              <div class="dropdownContent">
+                <a href="https://www.eclipse.org/" target="_blank">Visit Eclipse</a>
+              </div>
+            </div>
+            <button type="button" onclick="modFontSizeLarge()">150%</button>
+            <button type="button" onclick="modFontSizeMid()">125%</button>
+            <button type="button" onclick="modFontSizeSmall()">50%</button>
+            <div id="topBanner"></div>
+            <h2 class="sentence">Welcome to
+              <div class="antiClock">
+                <span>An Integrated Development Environment</span>
+                <span>Eclipse.</span>
+
+              </div>
+            </h2>
+            <script src="JScript/myScript.js"></script>
+            <div id="changeFont">
+            <button type="button" onclick="changeFontFamily()">Change Font</button>
+
+                <p> This is a website to help guide you through setting up the Eclipse IDE.
+                <br><br>
+                It's purpose is to help anyone getting started in software development or to
+                    help anyone who is already a developer and is just unfamiliar with this
+                    development environment.
+                <br><br>
+                The Menu on the left will take you to the main directory for each section.
+                <br><br>
+                As this is a prototype some sections aren't present while others are a work
+                in progress and are still under construction.
+                <br><br>
+                The final site would have more detail on each page and include sub directories for
+                    each section going into more detail to present as complete a guide to Eclipse
+                    as possible.
+                </p>
+            </div>
+            <div class="animatedImage"> <p>Boo</p></div>
+            <br>
+            <br>
+            <button type="button" onclick="showFooter()">Show Footer</button>
+            <p id ="footer">Intro to Eclipse.</p>
+        </div>
+
+        </body>
+
+
+</html>

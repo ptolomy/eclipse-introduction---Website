@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Installing an IDE</title>
+
+        <!--css references here-->
+        <link href="menu_css.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="animation.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class ="sidebar" >
+        <div id="header"></div>
+        <h3 class ="sidebar-item">Menu</h3>
+        <a href="main.html" class="button">Home</a>
+        <a href="intro.html" class="button">Intro</a>
+        <a href="installIDE.html" class="button"><b>Install an IDE.</b></a>
+        <a href="firstTime.html" class="button">First time setup</a>
+        <a href="createWSpace.html" class="button">Create Workspace</a>
+        <a href="menuOverview.html" class="button">Menu Overview</a>
+    </div>
+
+    <div id="container">
+        <p>Installing an IDE</p>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdownContent">
+            <a href="https://www.eclipse.org/" target="_blank">Visit Eclipse</a>
+          </div>
+        </div>
+        <script src="JScript/myScript.js"></script>
+        <button type="button" onclick="modFontSizeLarge()">150%</button>
+        <button type="button" onclick="modFontSizeMid()">125%</button>
+        <button type="button" onclick="modFontSizeSmall()">50%</button>
+        <div id="topBanner"></div>
+        <h2 class="sentence">Install IDE
+            <div class="popEffect">
+                <span>Get Ready</span>
+                <span>To create with the</span>
+                <span>Number 1 IDE</span>
+            </div>
+        </h2>
+        <p>
+            In this section we will talk about how to install the Eclipse IDE(Integrated Development Environment)
+            You will be able to see in the video where to get it from and the initial steps to take to complete
+            the installation.
+        </p>
+        <div id="changeFont">
+        <video class="video" width="60%"  controls>
+            <source src="video/download_eclipse_wAudio.mp4" type="video/mp4">
+        </video>
+            <p>Music Courtesy of Moog(Authorised use)<br><br>
+        <p> <b>Installing an IDE</b><br>
+            In this video you can see where to go to download (0.00- 0.07)
+            this takes you to the next page where you select the Eclipse version you want
+            the primary version of Eclipse is the one we are covering here.(0.12)<br>
+            The next page shows you where you are getting the download from(Server location)
+            and the sha key used to generate the download so you can check it against the version
+            with the installation so you know it is correct and hasn't been modified.(0.15)<br>
+            Once you have selected the download your browser will alert you to this and give you
+            choices such as Run or Save and Cancel, in this demo I select run (0.24).<br>
+            This opens up the Eclipse download manager(0.41).<br>
+            There are a lot of choices here for the various environments available but for this
+            we will look at the Java Developer IDE.<br>
+            Upon choosing your desired IDE, you are presented with an installation screen letting you choose
+            which Java Virtual Machine to use (1.8) in this case and where you would like to install the software
+            you can also choose to include a start menu and desktop shortcut.(0.46)<br>
+            Once you begin installing you are given a progress bar and you can cancel the install at any time during this
+            (0.57).</p>
+        </div>
+
+        <br>
+        <br>
+        <button type="button" onclick="showFooter()">Show Footer</button>
+        <p id ="footer">Intro to Eclipse.</p>
+    </div>
+
+    </body>
+
+
+</html>

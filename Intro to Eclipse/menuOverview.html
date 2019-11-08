@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Overview of menu items</title>
+
+        <!--css references here-->
+        <link href="menu_css.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="animation.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class ="sidebar" >
+        <div id="header"></div>
+        <h3 class ="sidebar-item">Menu</h3>
+        <a href="main.html" class="button">Home</a>
+        <a href="intro.html" class="button">Intro</a>
+        <a href="installIDE.html" class="button">Install an IDE</a>
+        <a href="firstTime.html" class="button">First time setup</a>
+        <a href="createWSpace.html" class="button">Create Workspace</a>
+        <a href="menuOverview.html" class="button"><b>Menu Overview.</b></a>
+    </div>
+
+    <div id="container">
+        <p>Overview of menu items</p>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdownContent">
+            <a href="https://www.eclipse.org/" target="_blank">Visit Eclipse</a>
+          </div>
+        </div>
+
+        <button type="button" onclick="modFontSizeLarge()">150%</button>
+        <button type="button" onclick="modFontSizeMid()">125%</button>
+        <button type="button" onclick="modFontSizeSmall()">50%</button>
+        <script src="JScript/myScript.js"></script>
+        <div id="topBanner"></div>
+        <h2 class="sentence">Welcome to
+          <div class="antiClock">
+            <span>An Integrated Development Environment</span>
+            <span>Eclipse.</span>
+
+          </div>
+        </h2>
+        <div id="content"></div>
+        <p><b>Under Construction</b></p>
+
+        <br>
+        <br>
+        <button type="button" onclick="showFooter()">Show Footer</button>
+        <p id ="footer">Intro to Eclipse.</p>
+    </div>
+
+    </body>
+
+
+</html>

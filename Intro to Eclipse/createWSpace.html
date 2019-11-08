@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Creating a new Workspace</title>
+
+        <!--css references here-->
+        <link href="menu_css.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="animation.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-color: whitesmoke;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    <div class ="sidebar" >
+        <div id="header"></div>
+        <h3 class ="sidebar-item">Menu</h3>
+        <a href="main.html" class="button">Home</a>
+        <a href="intro.html" class="button">Intro</a>
+        <a href="installIDE.html" class="button">Install an IDE</a>
+        <a href="firstTime.html" class="button">First time setup</a>
+        <a href="createWSpace.html" class="button"><b>Create Workspace.</b></a>
+        <a href="menuOverview.html" class="button">Menu Overview</a>
+    </div>
+
+    <div id="container">
+        <p>Creating a new Workspace</p>
+        <br>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdownContent">
+            <a href="https://www.eclipse.org/" target="_blank">Visit Eclipse</a>
+          </div>
+        </div>
+
+        <button type="button" onclick="modFontSizeLarge()">150%</button>
+        <button type="button" onclick="modFontSizeMid()">125%</button>
+        <button type="button" onclick="modFontSizeSmall()">50%</button>
+        <script src="JScript/myScript.js"></script>
+        <div id="topBanner"></div>
+        <h2 class="sentence">Workspace
+          <div class="slidingVertical">
+            <span>Where will you </span>
+            <span>put your Work Space?</span>
+
+          </div>
+        </h2>
+        <div id="changeFont">
+        <video class="video" width="60%"  controls>
+            <source src="video/first_time.mp4" type="video/mp4">
+        </video>
+        <p><b>Creating a Workspace</b><br>
+            A workspace is simply a location on a storage medium where you store any projects you are working on.
+            in the video you can see how to create a new workspace and some that are already created.<br><br>
+            When you select a new workspace you can select a preferred location or use the suggested default location
+            and name it as you see fit.<br><br>
+            In the video example you can see there are already some workspaces created with super creative names for them as well.
+            I'm particularly proud of <i>Eclipse Workspace2</i> but in this case each one refers to different project sources.<br>
+            For example <i>newEWorkspace</i> is where University projects are kept and <i>Eclipse workspace</i> is personal projects I work
+            on in my own free time and you can create as many as you need to keep things separate though it may be a good idea to use
+            a better naming convention for your own workspaces.
+
+
+        </p>
+        </div>
+        <br>
+        <br>
+        <button type="button" onclick="showFooter()">Show Footer</button>
+        <p id ="footer">Intro to Eclipse.</p>
+    </div>
+
+    </body>
+
+
+</html>
